@@ -7,9 +7,6 @@ const bodySchema = new Schema({
   causes: {
     type: String
   },
-  corrections: {
-    type: String
-  },
   smr: {
     type: String
   },

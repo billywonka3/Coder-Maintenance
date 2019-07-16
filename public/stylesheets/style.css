@@ -4,7 +4,7 @@ body {
 a {
   color: #00B7FF; }
 
-/*------------------ Landing Page ------------------*/
+/*------------------ Landing & Login Pages ------------------*/
 #landing {
   padding: 30px; }
 
@@ -25,8 +25,60 @@ a {
 }
 
 /*------------------ ??? ------------------*/
+.main-div {
+  height: 99vh;
+  width: 99vw;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
 
+.visual-nav {
+  height: 98vh;
+  /* width: auto; */
+  border-style: solid;
+  border-color: blue;
+}
+.visual-nav img {
+  height: 97vh;
+}
 
+.R-div {
+  height: 98vh;
+  width: 98vw;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: green;
+}
+.top-window {
+  height: 34vh;
+  padding: 0 7px;
+  border-style: solid;
+  border-color: pink;
+}
+.bottom-windows {
+  height: 64vh;
+  display: flex;
+  flex-direction: row;
+}
+.bottom-L-window {
+  height: 63.5vh;
+  width: 50%;
+  padding: 0 7px;
+  border-style: solid;
+  border-color: violet;
+}
+.bottom-R-window {
+  height: 63.5vh;
+  width: 50%;
+  padding: 0 7px;
+  border-style: solid;
+  border-color: rgb(238, 130, 130);
+}
 
 /*------------------ ??? ------------------*/
 
