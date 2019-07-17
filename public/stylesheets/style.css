@@ -274,51 +274,84 @@ a {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
-  border-style: solid;
-  border-color: green;
+  background: black;
+  color: white;
+  /* border-style: solid;
+  border-color: green; */
+}
+.R-div h6 {
+  font-weight: bold;
+  margin-bottom: 14px;
 }
 .top-window {
-  height: 34vh;
+  height: 35vh;
   padding: 0 7px;
   border-style: solid;
   border-color: pink;
-  object-fit: contain;
 }
 .bottom-windows {
-  height: 64vh;
+  height: 65vh;
   display: flex;
   flex-direction: row;
 }
 .bottom-L-window {
-  height: 63.5vh;
+  height: 64vh;
   width: 50%;
   padding: 0 7px;
   border-style: solid;
   border-color: violet;
+  overflow: auto;
 }
 .bottom-R-window {
-  height: 63.5vh;
+  height: 64vh;
   width: 50%;
   padding: 0 7px;
   border-style: solid;
   border-color: rgb(238, 130, 130);
+  overflow: auto;
 }
-.image-row img {
-  height: 100px;
+.image-row {
   display: flex;
-  justify-content: space-around;
-  object-fit: contain;
+  justify-content: space-evenly;
+}
+.image-row > img {
+  height: 18vh;
+}
+.smr-card {
+  border-style: solid;
+  border-width: thin;
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.smr-card > img {
+  height: 16vh;
+  margin: 5px 0;
+}
+.stretch-card {
+  border-style: solid;
+  border-width: thin;
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.stretch-card > img {
+  height: 16vh;
+  margin: 5px 0;
+}
+.directions {
+  font-size: 16px;
 }
 
 /*------------------ Main Page Buttons ------------------*/
 .neck-frwd-btn {
   position: relative;
-  bottom: 1015px;
+  bottom: 965px;
   left: 250px;
 }
 .neck-asym-btn {
   position: relative;
-  bottom: 1070px;
+  bottom: 1020px;
   right: 250px;
 }
 .shoulders-btn {
