@@ -24,70 +24,6 @@ a {
   text-align: center;
 }
 
-/*------------------ ??? ------------------*/
-.main-div {
-  height: 99vh;
-  width: 99vw;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-.visual-nav {
-  height: 98vh;
-  /* width: auto; */
-  border-style: solid;
-  border-color: blue;
-}
-.visual-nav img {
-  height: 97vh;
-}
-
-.R-div {
-  height: 98vh;
-  width: 98vw;
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
-  border-style: solid;
-  border-color: green;
-}
-.top-window {
-  height: 34vh;
-  padding: 0 7px;
-  border-style: solid;
-  border-color: pink;
-}
-.bottom-windows {
-  height: 64vh;
-  display: flex;
-  flex-direction: row;
-}
-.bottom-L-window {
-  height: 63.5vh;
-  width: 50%;
-  padding: 0 7px;
-  border-style: solid;
-  border-color: violet;
-}
-.bottom-R-window {
-  height: 63.5vh;
-  width: 50%;
-  padding: 0 7px;
-  border-style: solid;
-  border-color: rgb(238, 130, 130);
-}
-
-/*------------------ ??? ------------------*/
-
-
-
-/*------------------ ??? ------------------*/
-
-
-
 /*------------------ Social Registration Screen ------------------*/
 .form-control {
   font-size: 16px;
@@ -305,5 +241,201 @@ a {
 .social-btn .btn i {
   font-size: 20px;
 }
+
+
+/*------------------ Main Pain Page ------------------*/
+.main-div {
+  height: 99vh;
+  width: 99vw;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.visual-nav {
+  height: 98.5vh;
+  /* width: auto; */
+  border-style: solid;
+  border-color: blue;
+}
+.visual-nav img {
+  height: 98vh;
+  z-index: -2;
+}
+.visual-nav button {
+  font-style: italic;
+}
+
+.R-div {
+  height: 98.5vh;
+  width: 99vw;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: green;
+}
+.top-window {
+  height: 34vh;
+  padding: 0 7px;
+  border-style: solid;
+  border-color: pink;
+  object-fit: contain;
+}
+.bottom-windows {
+  height: 64vh;
+  display: flex;
+  flex-direction: row;
+}
+.bottom-L-window {
+  height: 63.5vh;
+  width: 50%;
+  padding: 0 7px;
+  border-style: solid;
+  border-color: violet;
+}
+.bottom-R-window {
+  height: 63.5vh;
+  width: 50%;
+  padding: 0 7px;
+  border-style: solid;
+  border-color: rgb(238, 130, 130);
+}
+.image-row img {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  object-fit: contain;
+}
+
+/*------------------ Main Page Buttons ------------------*/
+.neck-frwd-btn {
+  position: relative;
+  bottom: 1015px;
+  left: 250px;
+}
+.neck-asym-btn {
+  position: relative;
+  bottom: 1070px;
+  right: 250px;
+}
+.shoulders-btn {
+  position: relative;
+  bottom: 800px;
+  right: 70px;
+}
+.back-frwd-btn {
+  position: relative;
+  bottom: 585px;
+  left: 250px;
+}
+.back-rnd-btn {
+  position: relative;
+  bottom: 585px;
+}
+.back-asym-btn {
+  position: relative;
+  bottom: 585px;
+  right: 250px;
+}
+.wrists-btn1 {
+  position: relative;
+  bottom: 380px;
+  left: 250px;
+}
+.wrists-btn2 {
+  position: relative;
+  bottom: 430px;
+  right: 250px;
+}
+
+/*------------------ Glow Button ------------------*/
+.glow-on-hover {
+    width: 140px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background-color:rgba(212, 199, 199, 0.1);
+    backdrop-filter: alpha(opacity=10);
+    border-radius: 20px;
+    -webkit-filter: alpha(opacity=10);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #fffb00, #00ffd5, #FFFFFF);
+    position: absolute;
+    top: -5px;
+    left:-4.5px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*------------------ ??? ------------------*/
+
+
+
+/*------------------ ??? ------------------*/
+
+
+
+/*------------------ ??? ------------------*/
+
+
 
 /*# sourceMappingURL=style.css.map */
