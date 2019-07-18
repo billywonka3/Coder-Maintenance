@@ -1,15 +1,51 @@
-<h1>Welcome {{user.username}}</h1>
-
 <p>this is {{user.username}}'s private page</p>
-
-<form action="/logout" method="POST">
-  <button class="logout-btn">Logout</button>
-</form>
 
 {{#if user}}
   <div>
+    <h3> Profile Page </h3>
+      {{!-- <div>
+        <label>Name : </label>
+        <input id="update-name" type="text">
+      </div> --}}
+  </div>
+
+  <div>
+    <div id="custom-section">
+      <div class="leftside">
+          <h3> Custom Routine </h3>
+          <button id="custom-btn"> Show Routine </button>
+          <div id="list-of-custom">
+            
+          </div>
+      </div>
+
+      <div class="rightside">
+        <div>
+          <h4>Add New Stretch</h4>
+          <div>
+            <label>Name of Exercise</label>
+            <input id="new-title" type="text">
+          </div>
+          <div>
+            <label>Write a Brief Description</label>
+            <input id="new-description" type="text">
+          </div>
+          <div>
+            <br>
+            <label>Upload an Image</label>
+            <input id="new-image" type="file" name="thePic">
+          </div>
+          <br>
+          <button id="add-new-btn">Create Card</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
     <a href="/">Index</a>
+    <form action="/logout" method="POST">
+      <button class="logout-btn">Logout</button>
+    </form>
   </div>
 {{/if}}
-
-
